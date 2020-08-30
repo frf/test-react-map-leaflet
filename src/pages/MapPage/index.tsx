@@ -18,7 +18,7 @@ export default function MapPage() {
     const [markers, setMarkers] = useState([])
 
     useEffect(() => {
-    api.get('api/markers?limit=10000')
+    api.get('api/markers?limit=50000')
     .then(response => {
         const data = response.data;
         setMarkers(data);
